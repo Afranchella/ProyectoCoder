@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;  
+}  
+
+html{
+    font-size: 20px;
+}
+
+body{
+    background-image: url("../img/fondo1.jpg");
+    background: size 50% 50%;
+
+    }
+
+#grid{
+        display: grid;
+        grid-template-rows: .5fr 1fr .5fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:"header header header header"
+                            "main main main main"
+                            "footer footer footer footer";
+}
+
+
+header{
+    background-image: url("../img/banner2.png");
+    border: 10px solid transparent;
+    border-color:#1EA8E0;
+    width: 100%;
+    height: 8em;
+    position: sticky;
+    margin-bottom: 1px;
+    grid-area: header;
+}
+#logo{
+    height: 80%;
+    margin: 10px;
+}
+
+nav ul { 
+    width: 100%;
+    text-align: right;
+    justify-content: space-around;
+    vertical-align: middle;
+    list-style: none;
+    margin-top: -35px;
+}
+nav ul li{
+    margin-bottom: 4em;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titulo{
+    background-color: rgba(119, 136, 153, 0.21);
+    text-align: center;
+    font-family: tahoma; 
+    font-size: 3rem; 
+    font-weight: bold;
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+.parrafo{
+    font-style: italic;
+}
+
+main{
+    background-color: rgba(135, 206, 250, 0.242);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    grid-area: main;
+}
+
+#gridConocenos{
+    display: grid;
+        grid-template-rows: .5fr 1fr .5fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:"header header header"
+                            "main main main"
+                            "footer footer footer";
+}
+#profesionales{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.imgProf{
+    border: 2px solid black;
+}
+
+.imgClinica{
+    box-sizing: content-box;
+    max-width: 50%;
+    max-height: 50%;
+    border: 1px solid black;
+}
+.imgPaciente{
+    max-width: 30%;
+    max-height: 30%;
+    border: 5px solid black;
+    vertical-align: middle;
+}
+
+#tabla {
+    vertical-align: middle;
+    align-items: center;
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+footer{
+    flex: auto;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(15, 171, 1, 0.695);
+    border: 1px solid black;
+    grid-area: footer;
+}
+
+.logoInicio {
+    background-color: rgba(6, 76, 114, 0.879);
+    width: 6vw;
+    height: 12vh;
+    box-sizing: border-box;
+    align-items: center;
+    border: 2px solid black;
+}
+.contacto{
+    background-color:#1ea9e0b3;
+}
+
+
+@media screen and (max-width: 760px) {
+    nav ul{
+        flex-direction: column;
+    }
+    main {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    header{
+        display: grid;
+        grid-template-columns: 1 fr 1fr;
+    }
+    
+}
