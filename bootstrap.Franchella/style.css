@@ -9,37 +9,17 @@ html{
 }
 
 body{
-    background-image: url("./img/fondo1.jpg");
-    background: size 50% 50%;
+    background-image: url("./img/fondo2.jpg");
+    height: auto;
+    width: auto;
     }
 
-header{
-background-image: url("./img/banner2.png");
-border: 10px solid transparent;
-border-color:#1EA8E0;
-height: 8em;
-margin-bottom: 1px;
-grid-area: header;
-}
+    /* headerrr */
 
 #logo{
-height: 80%;
+height: 90px;
+width: 100px;
 margin: 10px;
-}
-
-nav ul { 
-text-align: right;
-justify-content: space-around;
-vertical-align: middle;
-list-style: none;
-margin-top: -35px;
-}
-nav ul li{
-margin-bottom: 4em;
-display: inline-block;
-text-align: center;
-vertical-align: middle;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .titulo{
