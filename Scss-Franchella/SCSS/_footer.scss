@@ -1,0 +1,19 @@
+footer{
+    flex: auto;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #8CC540;
+    font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border: 1px solid black;
+    grid-area: footer;
+        div{
+            background-color: rgba(6, 76, 114, 0.647);
+            width: 5vw;
+            height: 10vh;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+    }
+    .contacto{
+    background-color:#1EA8E0;
+    }

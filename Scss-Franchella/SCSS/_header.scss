@@ -1,0 +1,38 @@
+header{
+    nav{
+        div{
+            a{
+                #logo{
+                    height: 90px;
+                    width: 100px;
+                    margin: 10px;
+                }
+            }
+            div{
+                div{
+                    a{
+                        &:hover{
+                            border-bottom: 2px black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    .colorText{
+        color: #60c52d;
+        font-family:'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+    }
+    .titulo{
+        background-color: #168AAD;
+        text-align: center;
+        font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+        font-size: 3rem; 
+        font-weight: bold;
+        font-style: italic;
+        box-sizing: border-box;
+        }
+        .parrafo{
+        font-style: italic;
+        }
